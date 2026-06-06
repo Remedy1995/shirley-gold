@@ -1,7 +1,8 @@
+import Image from "next/image";
+
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { PageHero } from "@/components/page-hero";
-import { Section } from "@/components/section";
 import { leadership } from "@/content/site";
 import { breadcrumbJsonLd, buildMetadata, personJsonLd } from "@/lib/seo";
 
@@ -13,6 +14,19 @@ export const metadata = buildMetadata({
 });
 
 export default function LeadershipPage() {
+  const founderProfile = [
+    "Dynamic and visionary business executive with over 18 years of distinguished experience spanning real estate development, commodities trading, international commerce, microfinance, and organizational leadership.",
+    "As Founder and Chief Executive Officer of DD Willet Group, a diversified group with interests in real estate, wholesale distribution, printing, import/export, and financial services, he has built a formidable track record of delivering multi-million-dollar projects and establishing new business verticals across Ghana and the UAE.",
+    "Recognized for his ability to mobilize capital, forge high-value cross-border partnerships, and drive large-scale execution, he has successfully raised and deployed over $25 million in financing.",
+    "He is also the founder of Shirley's Gold Trading Enterprise (Dubai), a GoldBod-licensed gold buyer through Willet Investment, and a major shareholder in Willet Microcredit, a microfinance institution on a regulated pathway to community bank status."
+  ];
+  const prithamProfile = [
+    "Chief Executive Officer with over a decade of experience in leading global organizations to achieve strategic growth objectives, drive operational excellence, enhance profitability, and foster innovation.",
+    "Skilled in building high-performing teams, cultivating key stakeholder relationships, and executing transformative initiatives to propel business success, he brings a strong focus on delivering sustainable value and long-term shareholder outcomes.",
+    "At Shirley's Gold Trading Enterprise in Dubai, he directs organizational operations across strategy development, financial performance, market positioning, and human capital management.",
+    "His executive record includes implementing cost-saving measures that reduced operational expenses while strengthening service quality, alongside cultivating a culture of innovation, customer satisfaction, and market growth."
+  ];
+
   return (
     <>
       <JsonLd data={personJsonLd()} />
@@ -25,35 +39,100 @@ export default function LeadershipPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Leadership" }]} />
       <PageHero
         eyebrow="Leadership"
-        title="Shirley Ama Daniels"
-        description="A business executive and investment strategist with more than a decade of experience across gold trading, commodity exports, procurement, and strategic business management."
+        title="Executive Profile"
       />
-      <Section title="Executive profile" description="The leadership narrative supports trust, credibility, and strategic context without overtaking the company brand.">
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[2rem] p-8">
-            <p className="text-xs uppercase tracking-[0.22em] text-gold">Current Role</p>
-            <div className="profile-orb mt-6 flex h-32 w-32 items-center justify-center rounded-full text-4xl font-semibold text-theme-primary">
-              SD
+          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
+              <Image
+                src="/images/headshots/pritham-r.jpeg"
+                alt="Portrait of Pritham R"
+                width={900}
+                height={1100}
+                className="h-full w-full object-cover object-top"
+              />
             </div>
-            <h2 className="mt-6 text-3xl font-semibold text-theme-primary">{leadership.role}</h2>
-            <div className="mt-8 space-y-3">
-              {leadership.focusAreas.map((item) => (
-                <div key={item} className="theme-panel-soft rounded-2xl px-4 py-3 text-sm text-theme-secondary">
-                  {item}
-                </div>
-              ))}
-            </div>
+            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">PRITHAM R</h2>
           </article>
-          <article className="theme-panel shine-surface rounded-[2rem] p-8">
-            <p className="text-lg leading-8 text-theme-primary">{leadership.intro}</p>
-            {leadership.body.map((paragraph) => (
-              <p key={paragraph} className="mt-5 text-base leading-8 text-theme-secondary">
+          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">Chief Executive Officer</p>
+            {prithamProfile.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`text-base leading-8 ${
+                  index === 0 ? "mt-4 text-theme-primary" : "mt-5 text-theme-secondary"
+                }`}
+              >
                 {paragraph}
               </p>
             ))}
           </article>
         </div>
-      </Section>
+      </section>
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
+              <Image
+                src="/images/headshots/shirley-ama-daniels.jpg"
+                alt="Portrait of Shirley Ama Daniels"
+                width={900}
+                height={1100}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
+            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">
+              {leadership.name}
+            </h2>
+          </article>
+          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">{leadership.role}</p>
+            <p className="mt-4 text-base leading-8 text-theme-primary">
+              Shirley Ama Daniels is a results-driven business executive and investment strategist with more than a decade of experience across gold trading, commodity exports, procurement, and strategic business management.
+            </p>
+            {leadership.body.map((paragraph) => (
+              <p key={paragraph} className="mt-5 text-base leading-8 text-theme-secondary first:mt-6">
+                {paragraph}
+              </p>
+            ))}
+          </article>
+        </div>
+      </section>
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
+              <Image
+                src="/images/headshots/dd-willet-founder.jpg"
+                alt="Portrait of the founder and chief executive officer of DD Willet Group"
+                width={600}
+                height={600}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">
+              Founder & Chief Executive Officer
+            </h2>
+          </article>
+          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
+              DD Willet Group Leadership
+            </p>
+            {founderProfile.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`text-base leading-8 ${
+                  index === 0 ? "mt-4 text-theme-primary" : "mt-5 text-theme-secondary"
+                }`}
+              >
+                {paragraph}
+              </p>
+            ))}
+          </article>
+        </div>
+      </section>
     </>
   );
 }

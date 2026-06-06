@@ -4,10 +4,10 @@ import { leadership } from "@/content/site";
 
 export function FounderHighlight() {
   return (
-    <div className="theme-panel shine-surface grid gap-8 rounded-[2rem] p-8 lg:grid-cols-[0.7fr_1.3fr]">
+    <div className="theme-panel shine-surface grid gap-8 rounded-[2rem] p-6 sm:p-8 lg:grid-cols-[0.7fr_1.3fr]">
       <div className="theme-panel-strong rounded-[1.75rem] p-6">
         <p className="text-xs uppercase tracking-[0.22em] text-gold">Leadership Profile</p>
-        <div className="profile-orb mt-6 flex h-32 w-32 items-center justify-center rounded-full text-4xl font-semibold text-theme-primary">
+        <div className="profile-orb mt-6 flex h-24 w-24 items-center justify-center rounded-full text-3xl font-semibold text-theme-primary sm:h-32 sm:w-32 sm:text-4xl">
           SD
         </div>
         <h3 className="mt-6 text-3xl font-semibold text-theme-primary">{leadership.name}</h3>

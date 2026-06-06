@@ -38,12 +38,12 @@ export default function ContactPage() {
         title="Structured business enquiries"
         description="Use the contact details below to begin a business conversation around sourcing, procurement, distribution, or strategic collaboration."
       />
-      <Section title="Direct company contact" description="Use the enquiry form for structured submissions, or contact the company directly for immediate discussions.">
-        <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+        <div className="space-y-12">
           <ContactForm />
           <ContactModule />
         </div>
-      </Section>
+      </section>
       <Section title="Enquiry scope" description="The company welcomes structured commercial discussions in the following areas.">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {enquiryTypes.map((item) => (

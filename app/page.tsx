@@ -1,11 +1,9 @@
 import { CompliancePanel } from "@/components/compliance-panel";
 import { DivisionGrid } from "@/components/division-grid";
-import { FounderHighlight } from "@/components/founder-highlight";
 import { GeographyGrid } from "@/components/geography-grid";
 import { Hero } from "@/components/hero";
 import { JsonLd } from "@/components/json-ld";
 import { Section } from "@/components/section";
-import { StakeholderShowcase } from "@/components/stakeholder-showcase";
 import { StatsBand } from "@/components/stats-band";
 import { ValuePropositionGrid } from "@/components/value-proposition-grid";
 import { faqJsonLd } from "@/lib/seo";
@@ -43,16 +41,6 @@ export default function HomePage() {
         description="The company uses Dubai as a global coordination hub while maintaining strong sourcing, supply, and buyer relationships across multiple jurisdictions."
       >
         <GeographyGrid />
-      </Section>
-      <Section
-        eyebrow="Leadership and Stakeholders"
-        title="Leadership presented with a clear long-term growth mandate."
-        description="The company is led by experienced commercial leadership with the structure to expand its published stakeholder profile as additional approved records are released."
-      >
-        <div className="space-y-6">
-          <FounderHighlight />
-          <StakeholderShowcase />
-        </div>
       </Section>
     </>
   );

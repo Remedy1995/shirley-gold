@@ -10,10 +10,10 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-32">
         <div className="space-y-8">
           <p className="text-xs uppercase tracking-[0.3em] text-gold">Dubai Free Zone Company</p>
-          <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] text-theme-primary sm:text-6xl md:text-7xl">
+          <h1 className="max-w-4xl text-4xl font-semibold leading-[0.95] text-theme-primary sm:text-5xl md:text-6xl xl:text-7xl">
             {site.heroTitle}
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-theme-secondary md:text-xl">
+          <p className="max-w-2xl text-base leading-8 text-theme-secondary sm:text-lg md:text-xl">
             {site.heroText}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">

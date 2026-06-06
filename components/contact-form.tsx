@@ -21,13 +21,9 @@ export function ContactForm() {
           Share your sourcing requirement, product scope, preferred market, and expected timeline so the team can review your request and respond with the right commercial next step.
         </p>
       </div>
-      {!isConfigured ? (
-        <div className="theme-panel-soft mb-6 rounded-2xl p-4 text-sm leading-7 text-theme-secondary">
-          Structured online submissions are being finalized. For immediate enquiries, please use the direct company contact details on this page.
-        </div>
-      ) : null}
       <form action={site.formspreeEndpoint || undefined} method="POST" className="grid gap-5 lg:grid-cols-2">
         <input type="hidden" name="_subject" value="New Shirley's Gold Trading Enterprise enquiry" />
+        <input type="hidden" name="_captcha" value="false" />
         <div>
           <label htmlFor="name" className="mb-2 block text-sm font-medium text-theme-primary">
             Full name
@@ -104,21 +100,7 @@ export function ContactForm() {
             placeholder="Outline the products or services required, your target market, quantity or volume, and any timeline or compliance considerations."
           />
         </div>
-        <div className="lg:col-span-2 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm leading-7 text-theme-secondary">
-            Preferred direct contact remains
-            {" "}
-            <a href={`mailto:${site.email}`} className="text-gold hover:text-amber">
-              {site.email}
-            </a>
-            {" "}
-            and
-            {" "}
-            <a href={`tel:${site.phone.replace(/\s+/g, "")}`} className="text-gold hover:text-amber">
-              {site.phone}
-            </a>
-            .
-          </p>
+        <div className="lg:col-span-2 flex justify-end">
           <button
             type="submit"
             disabled={!isConfigured}
