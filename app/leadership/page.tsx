@@ -40,6 +40,7 @@ export default function LeadershipPage() {
       <PageHero
         eyebrow="Leadership"
         title="Executive Profile"
+        description="Executive leadership across strategy, investment, operations, and cross-border trade execution."
       />
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
