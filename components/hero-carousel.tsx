@@ -101,7 +101,6 @@ export function HeroCarousel() {
           src={slide.image}
           alt={slide.tag}
           fill
-          unoptimized
           sizes="(max-width: 1024px) 100vw, 80vw"
           className={`absolute inset-0 h-full w-full object-cover object-center ${slide.imageClassName ?? ""}`}
         />

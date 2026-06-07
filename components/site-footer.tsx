@@ -8,7 +8,7 @@ export function SiteFooter() {
     <footer className="border-t border-[rgb(var(--line)/0.1)] bg-[rgb(var(--bg-bottom)/0.9)]">
       <div className="mx-auto grid w-[80%] max-w-[1800px] gap-12 py-14 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="space-y-5">
-          <p className="text-xs uppercase tracking-[0.25em] text-black dark:text-white">Shirley Trading</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-gold">Shirley Trading</p>
           <h2 className="max-w-xl text-3xl font-semibold text-theme-primary">
             Cross-border trading built on disciplined execution, ethical sourcing, and long-term partnerships.
           </h2>

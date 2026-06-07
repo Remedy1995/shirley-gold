@@ -75,7 +75,7 @@ export function SiteHeader() {
                 href={item.href}
                 className={`rounded-xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.1em] transition ${
                   pathname === item.href
-                    ? "border border-white/20 bg-white/10 text-white"
+                    ? "bg-white text-black"
                     : "text-white/80 hover:bg-white/8 hover:text-white"
                 }`}
               >
