@@ -7,7 +7,7 @@ export function GeographyGrid() {
       {site.geography.map((item) => (
         <article
           key={item.name}
-          className="rounded-[1.75rem] border border-[rgb(var(--line)/0.12)] bg-white p-6 shadow-[0_22px_50px_rgba(15,23,42,0.08)]"
+          className="theme-panel shine-surface rounded-[1.75rem] p-6"
         >
           <div className="flex items-start justify-between gap-4">
             <div className="space-y-3">

@@ -26,7 +26,7 @@ export const site = {
   titleTemplate: "%s | Shirley Trading",
   description:
     "Shirley's Gold Trading Enterprise - FZCO is a Dubai-based trading company connecting African resources with global markets through precious metals trading, automotive imports, and consumer electronics distribution.",
-  domain: "https://www.shirleysgoldtrading.com",
+  domain: "https://www.shirleytrading.com",
   ogImage: "/og-image.png",
   keywords: [
     "Shirley Trading",
