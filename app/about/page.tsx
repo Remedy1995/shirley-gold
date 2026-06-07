@@ -120,7 +120,7 @@ export default function AboutPage() {
               return (
                 <article
                   key={item.title}
-                  className="theme-panel shine-surface relative flex-1 overflow-hidden rounded-[1.75rem] px-5 py-5 sm:px-7 sm:py-6"
+                  className="theme-panel shine-surface relative flex-1 overflow-hidden rounded-[1.25rem] p-5"
                 >
                   <div className="absolute inset-y-0 left-0 w-2 bg-gold" />
                   <div className="flex flex-col gap-4 pl-5 sm:flex-row sm:items-center sm:gap-5 sm:pl-7">
@@ -138,7 +138,7 @@ export default function AboutPage() {
               );
             })}
           </div>
-          <div className="theme-panel shine-surface h-full rounded-[2rem] p-6 sm:p-8">
+          <div className="theme-panel shine-surface h-full rounded-[1.5rem] p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">Registration Profile</p>
             <dl className="mt-6 space-y-5 text-sm text-theme-secondary">
               <div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
       </Section>
       <Section title="Mission and vision" description="The company is built around disciplined growth, ethical trade, and sustainable stakeholder value.">
         <div className="grid gap-6 lg:grid-cols-2">
-          <article className="theme-panel shine-surface rounded-[2rem] p-8">
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-6">
             <div className="flex items-center gap-4">
               <IconBadge className="h-12 w-12 rounded-[1rem]">
                 <GlobeIcon />
@@ -196,7 +196,7 @@ export default function AboutPage() {
             </div>
             <p className="mt-5 text-lg leading-8 text-theme-primary">{site.mission}</p>
           </article>
-          <article className="theme-panel shine-surface rounded-[2rem] p-8">
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-6">
             <div className="flex items-center gap-4">
               <IconBadge className="h-12 w-12 rounded-[1rem]">
                 <SparkIcon />
@@ -215,12 +215,12 @@ export default function AboutPage() {
             const Icon = valueIcons[value.title as keyof typeof valueIcons] ?? ShieldIcon;
 
             return (
-              <article key={value.title} className="theme-panel shine-surface rounded-[1.75rem] p-6">
+              <article key={value.title} className="theme-panel shine-surface rounded-[1.25rem] p-5">
                 <div className="flex items-center gap-4">
                   <IconBadge className="h-11 w-11 rounded-[0.95rem]">
                     <Icon />
                   </IconBadge>
-                  <h3 className="text-2xl font-semibold text-theme-primary">{value.title}</h3>
+                  <h3 className="text-xl font-semibold text-theme-primary">{value.title}</h3>
                 </div>
                 <p className="mt-4 text-sm leading-7 text-theme-secondary">{value.body}</p>
               </article>
@@ -228,21 +228,18 @@ export default function AboutPage() {
           })}
         </div>
       </Section>
-      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-10 lg:pb-28">
-        <div className="overflow-hidden rounded-[2rem] border border-[rgb(var(--line)/0.16)] bg-white shadow-[0_22px_70px_rgb(var(--panel-shadow)/0.2)]">
-          <div className="bg-[#162754] px-6 py-8 text-white sm:px-8 sm:py-10">
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Geographical Footprint</h2>
-            <p className="mt-4 text-lg leading-8 text-white/88">
+      <section className="mx-auto w-[80%] max-w-[1800px] pb-20 lg:pb-28">
+        <div className="overflow-hidden rounded-[2rem] border border-[rgb(var(--line)/0.16)] theme-panel shine-surface">
+          <div className="border-b border-[rgb(var(--line)/0.1)] bg-[rgb(var(--surface)/0.04)] px-6 py-8 sm:px-8 sm:py-10">
+            <h2 className="text-3xl font-bold tracking-tight text-theme-primary sm:text-4xl">Geographical Footprint</h2>
+            <p className="mt-4 text-base leading-8 text-theme-secondary">
               Strategic positioning across Africa, the Middle East, and Asia
             </p>
           </div>
-          <div className="h-2 bg-gold" />
           <div className="divide-y divide-[rgb(var(--line)/0.14)]">
             {footprintItems.map((item) => (
-              <article key={item.title} className="relative bg-white px-5 py-6 sm:px-8 sm:py-7">
-                <div
-                  className={`absolute inset-y-0 left-0 w-3 ${item.accent === "gold" ? "bg-gold" : "bg-[#274b92]"}`}
-                />
+              <article key={item.title} className="relative px-5 py-6 sm:px-8 sm:py-7">
+                <div className="absolute inset-y-0 left-0 w-3 bg-gold" />
                 <div className="pl-5 sm:pl-8">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                     <div className="flex items-start gap-4">
@@ -256,13 +253,7 @@ export default function AboutPage() {
                         </p>
                       </div>
                     </div>
-                    <div
-                      className={`inline-flex shrink-0 items-center justify-center px-5 py-3 text-sm font-semibold ${
-                        item.accent === "gold"
-                          ? "bg-gold text-[#162754]"
-                          : "bg-[#274b92] text-white"
-                      }`}
-                    >
+                    <div className="inline-flex shrink-0 items-center justify-center rounded-full border border-gold/30 bg-gold/10 px-5 py-3 text-sm font-semibold text-gold">
                       {item.badge}
                     </div>
                   </div>

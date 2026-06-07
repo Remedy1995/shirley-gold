@@ -22,23 +22,35 @@ export type Stakeholder = {
 
 export const site = {
   name: "Shirley's Gold Trading Enterprise - FZCO",
-  shortName: "Shirley's Gold Trading",
-  titleTemplate: "%s | Shirley's Gold Trading",
+  shortName: "Shirley Trading",
+  titleTemplate: "%s | Shirley Trading",
   description:
     "Shirley's Gold Trading Enterprise - FZCO is a Dubai-based trading company connecting African resources with global markets through precious metals trading, automotive imports, and consumer electronics distribution.",
   domain: "https://www.shirleysgoldtrading.com",
-  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "",
+  ogImage: "/icon.svg",
+  keywords: [
+    "Shirley Trading",
+    "Shirley's Gold Trading Enterprise",
+    "Dubai trading company",
+    "precious metals trading",
+    "gold procurement Ghana",
+    "automotive imports West Africa",
+    "electronics distribution Africa",
+    "Dubai Silicon Oasis FZCO",
+    "commodity exports UAE"
+  ],
+  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "https://formspree.io/f/xgobazay",
   phone: "+971 55 339 8741",
-  email: "dicksondaniels318@gmail.com",
+  email: "info@shirleytrading.com",
   license: "License No. 50854",
   address: "DSO-IFZA, IFZA Properties, Dubai Silicon Oasis, Dubai, UAE",
   registration: "Dubai Economy and Tourism Department",
   freeZone: "Dubai Silicon Oasis (DSO-IFZA)",
   jurisdiction: "Dubai Silicon Oasis Authority (DSOA)",
   founded: "2024",
-  heroTitle: "Connecting African resources with global markets.",
+  heroTitle: "Connecting strategic trade corridors with global markets.",
   heroText:
-    "Established in 2024 under Dubai Silicon Oasis, Shirley's Gold Trading Enterprise - FZCO specialises in precious metals trading, automotive imports, and consumer electronics distribution across Africa, the Middle East, and Asia.",
+    "Established under Dubai Silicon Oasis, Shirley's Gold Trading Enterprise - FZCO operates across precious metals, automotive imports, and electronics distribution with a model built for regulated trade, cross-border execution, and long-range commercial value.",
   stats: [
     { label: "Annual Gold Export", value: "200-400 kg" },
     { label: "Business Divisions", value: "3" },
@@ -297,6 +309,7 @@ export const navigation = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/divisions", label: "Divisions" },
+  { href: "/services", label: "Services" },
   { href: "/compliance", label: "Compliance" },
   { href: "/leadership", label: "Leadership" },
   { href: "/contact", label: "Contact" }

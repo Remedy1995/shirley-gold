@@ -18,12 +18,12 @@ export function DivisionGrid() {
         return (
           <article
             key={division.slug}
-            className="theme-panel shine-surface group rounded-[2rem] p-7 transition hover:-translate-y-1 hover:border-gold/35"
+            className="theme-panel shine-surface group rounded-[1.5rem] p-6 transition hover:-translate-y-1 hover:border-gold/35"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-xs uppercase tracking-[0.25em] text-gold">{division.eyebrow}</p>
-                <h3 className="mt-4 text-2xl font-semibold text-theme-primary">{division.name}</h3>
+                <h3 className="mt-4 text-xl font-semibold text-theme-primary">{division.name}</h3>
               </div>
                 <IconBadge className="h-16 w-16 rounded-[1.25rem]">
                   <Icon />

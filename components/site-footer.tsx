@@ -1,13 +1,14 @@
 import Link from "next/link";
 
+import { MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
 import { navigation, site } from "@/content/site";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-[rgb(var(--line)/0.1)] bg-[rgb(var(--bg-bottom)/0.9)]">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-14 lg:grid-cols-[1.2fr_0.8fr] lg:px-10">
+      <div className="mx-auto grid w-[80%] max-w-[1800px] gap-12 py-14 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="space-y-5">
-          <p className="text-xs uppercase tracking-[0.25em] text-gold">Shirley&apos;s Gold Trading</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-black dark:text-white">Shirley Trading</p>
           <h2 className="max-w-xl text-3xl font-semibold text-theme-primary">
             Cross-border trading built on disciplined execution, ethical sourcing, and long-term partnerships.
           </h2>
@@ -28,12 +29,32 @@ export function SiteFooter() {
               ))}
             </div>
           </div>
-          <div className="space-y-3 text-sm text-theme-secondary">
+          <div className="space-y-4 text-sm text-theme-secondary">
             <p className="font-medium text-theme-primary">Contact</p>
-            <p>{site.address}</p>
-            <p>{site.email}</p>
-            <p>{site.phone}</p>
-            <p>{site.license}</p>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-gold">
+                  <MapPinIcon className="h-4 w-4" />
+                </span>
+                <span>{site.address}</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-gold">
+                  <MailIcon className="h-4 w-4" />
+                </span>
+                <a href={`mailto:${site.email}`} className="transition hover:text-theme-primary">
+                  {site.email}
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-gold">
+                  <PhoneIcon className="h-4 w-4" />
+                </span>
+                <a href={`tel:${site.phone.replace(/\s+/g, "")}`} className="transition hover:text-theme-primary">
+                  {site.phone}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

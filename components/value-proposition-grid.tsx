@@ -10,7 +10,7 @@ export function ValuePropositionGrid() {
         const Icon = valueIcons[index] ?? SparkIcon;
 
         return (
-          <article key={item.title} className="theme-panel shine-surface rounded-[1.75rem] p-6">
+          <article key={item.title} className="theme-panel shine-surface rounded-[1.25rem] p-5">
             <div className="flex items-start justify-between gap-4">
               <p className="text-xs uppercase tracking-[0.2em] text-gold">{item.title}</p>
               <IconBadge className="h-11 w-11 rounded-2xl">

@@ -72,14 +72,24 @@ export default function CompliancePage() {
             const Icon = block.icon;
 
             return (
-              <article key={block.title} className="theme-panel shine-surface rounded-[1.75rem] p-6">
+              <article
+                key={block.title}
+                className="rounded-[1.25rem] border border-[rgb(var(--line)/0.12)] bg-[linear-gradient(180deg,#ffffff_0%,#f7f3ea_100%)] p-5 shadow-[0_22px_50px_rgba(15,23,42,0.08)]"
+              >
                 <div className="flex items-start justify-between gap-4">
-                  <h2 className="text-2xl font-semibold text-theme-primary">{block.title}</h2>
-                  <IconBadge className="h-11 w-11 rounded-[0.95rem]">
+                  <div className="space-y-3">
+                    <div className="inline-flex rounded-full border border-[rgb(var(--line)/0.08)] bg-[#f8f1df] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#b98729]">
+                      Trust Signal
+                    </div>
+                    <h2 className="text-xl font-semibold text-theme-primary">{block.title}</h2>
+                  </div>
+                  <IconBadge className="h-12 w-12 rounded-[1rem] bg-white text-theme-primary shadow-[0_12px_24px_rgba(15,23,42,0.08)]">
                     <Icon />
                   </IconBadge>
                 </div>
-                <p className="mt-4 text-sm leading-7 text-theme-secondary">{block.body}</p>
+                <div className="mt-5 rounded-[1.25rem] border border-white/80 bg-white/88 p-4">
+                  <p className="text-base leading-8 text-theme-secondary">{block.body}</p>
+                </div>
               </article>
             );
           })}

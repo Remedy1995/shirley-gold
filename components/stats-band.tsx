@@ -6,7 +6,7 @@ const statIcons = [SparkIcon, ChartIcon, GlobeIcon, ChartIcon];
 export function StatsBand() {
   return (
     <div className="border-y border-[rgb(var(--line)/0.1)] bg-[rgb(var(--surface)/0.04)]">
-      <div className="mx-auto max-w-7xl px-6 py-8 lg:px-10">
+      <div className="mx-auto w-[80%] max-w-[1800px] py-8">
         <div className="mb-8 max-w-2xl">
           <p className="text-xs uppercase tracking-[0.24em] text-gold">Company Snapshot</p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-theme-primary md:text-4xl">

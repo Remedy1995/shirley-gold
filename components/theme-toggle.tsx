@@ -36,7 +36,7 @@ export function ThemeToggle() {
       <span className="theme-toggle-orb" aria-hidden="true">
         {theme === "dark" ? "◐" : "◑"}
       </span>
-      <span>{theme === "dark" ? "Light theme" : "Dark theme"}</span>
+      <span className="hidden">{theme === "dark" ? "Light theme" : "Dark theme"}</span>
     </button>
   );
 }

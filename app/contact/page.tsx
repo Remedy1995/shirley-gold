@@ -38,7 +38,7 @@ export default function ContactPage() {
         title="Structured business enquiries"
         description="Use the contact details below to begin a business conversation around sourcing, procurement, distribution, or strategic collaboration."
       />
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
         <div className="space-y-12">
           <ContactForm />
           <ContactModule />

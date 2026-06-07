@@ -14,9 +14,14 @@ export function buildMetadata({ title, description, path }: MetaProps): Metadata
   return {
     title,
     description,
+    keywords: site.keywords,
     metadataBase: new URL(site.domain),
     alternates: {
       canonical: path
+    },
+    robots: {
+      index: true,
+      follow: true
     },
     openGraph: {
       title,
@@ -24,12 +29,21 @@ export function buildMetadata({ title, description, path }: MetaProps): Metadata
       url,
       siteName: site.shortName,
       locale: "en_US",
-      type: "website"
+      type: "website",
+      images: [
+        {
+          url: `${site.domain}${site.ogImage}`,
+          width: 256,
+          height: 256,
+          alt: site.shortName
+        }
+      ]
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      images: [`${site.domain}${site.ogImage}`]
     }
   };
 }
@@ -45,6 +59,13 @@ export function organizationJsonLd() {
     telephone: site.phone,
     foundingDate: site.founded,
     description: site.description,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: site.email,
+      telephone: site.phone,
+      areaServed: ["AE", "GH"]
+    },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Dubai",

@@ -42,11 +42,11 @@ export default function DivisionsPage() {
             const Icon = divisionIcons[division.slug];
 
             return (
-              <article key={division.slug} className="theme-panel shine-surface rounded-[2rem] p-8">
+              <article key={division.slug} className="theme-panel shine-surface rounded-[1.5rem] p-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs uppercase tracking-[0.24em] text-gold">{division.eyebrow}</p>
-                    <h2 className="mt-4 text-3xl font-semibold text-theme-primary">{division.name}</h2>
+                    <h2 className="mt-4 text-xl font-semibold text-theme-primary">{division.name}</h2>
                   </div>
                   <IconBadge>
                     <Icon />

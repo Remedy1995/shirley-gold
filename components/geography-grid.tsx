@@ -2,27 +2,12 @@ import { GlobeIcon, IconBadge, MapPinIcon } from "@/components/icons";
 import { site } from "@/content/site";
 
 export function GeographyGrid() {
-  const cardThemes: Record<string, string> = {
-    "United Arab Emirates":
-      "border border-[#d9c08b] bg-[linear-gradient(180deg,#fffaf0_0%,#f7eed7_100%)]",
-    "Ghana, West Africa":
-      "border border-[#d8c88f] bg-[linear-gradient(180deg,#fffdf3_0%,#f4efd7_100%)]",
-    "West Africa":
-      "border border-[#cfd8eb] bg-[linear-gradient(180deg,#f8fbff_0%,#eef3fb_100%)]",
-    China:
-      "border border-[#d6ddef] bg-[linear-gradient(180deg,#fbfcff_0%,#eef2fa_100%)]",
-    "Global Refineries":
-      "border border-[#d5d8e4] bg-[linear-gradient(180deg,#ffffff_0%,#f3f5f9_100%)]"
-  };
-
   return (
-    <div className="grid gap-5 lg:grid-cols-5">
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {site.geography.map((item) => (
         <article
           key={item.name}
-          className={`rounded-[1.75rem] p-6 shadow-[0_22px_50px_rgba(15,23,42,0.08)] ${
-            cardThemes[item.name] ?? "border border-[rgb(var(--line)/0.12)] bg-white"
-          }`}
+          className="rounded-[1.75rem] border border-[rgb(var(--line)/0.12)] bg-white p-6 shadow-[0_22px_50px_rgba(15,23,42,0.08)]"
         >
           <div className="flex items-start justify-between gap-4">
             <div className="space-y-3">

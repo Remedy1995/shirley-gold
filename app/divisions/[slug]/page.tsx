@@ -152,7 +152,7 @@ export default async function DivisionDetailPage({ params }: PageProps) {
         description={division.description}
       />
       {division.slug === "automotive" ? (
-        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-22">
+        <section className="mx-auto w-[80%] max-w-[1800px] py-16 lg:py-22">
           <div className="space-y-8">
             <div className="mb-[30px] max-w-4xl">
               <p className="text-base font-semibold uppercase tracking-[0.24em] text-gold sm:text-lg">
@@ -237,7 +237,7 @@ export default async function DivisionDetailPage({ params }: PageProps) {
           </div>
         </section>
       ) : division.slug === "electronics" ? (
-        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+        <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
           <div className="mt-8 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
             {electronicsCategories.map((item) => {
               const Icon = item.icon;

@@ -14,7 +14,50 @@ export const metadata: Metadata = {
     template: site.titleTemplate
   },
   description: site.description,
+  keywords: site.keywords,
+  category: "business",
+  applicationName: site.shortName,
+  creator: site.shortName,
+  publisher: site.shortName,
   metadataBase: new URL(site.domain),
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg"
+  },
+  openGraph: {
+    title: site.shortName,
+    description: site.description,
+    url: site.domain,
+    siteName: site.shortName,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: `${site.domain}${site.ogImage}`,
+        width: 256,
+        height: 256,
+        alt: site.shortName
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.shortName,
+    description: site.description,
+    images: [`${site.domain}${site.ogImage}`]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
   alternates: {
     canonical: "/"
   }

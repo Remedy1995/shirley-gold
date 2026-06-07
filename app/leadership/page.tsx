@@ -42,9 +42,9 @@ export default function LeadershipPage() {
         title="Executive Profile"
         description="Executive leadership across strategy, investment, operations, and cross-border trade execution."
       />
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
               <Image
                 src="/images/headshots/pritham-r.jpeg"
@@ -54,9 +54,9 @@ export default function LeadershipPage() {
                 className="h-full w-full object-cover object-top"
               />
             </div>
-            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">PRITHAM R</h2>
+            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">PRITHAM R</h2>
           </article>
-          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">Chief Executive Officer</p>
             {prithamProfile.map((paragraph, index) => (
               <p
@@ -71,9 +71,9 @@ export default function LeadershipPage() {
           </article>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
               <Image
                 src="/images/headshots/shirley-ama-daniels.jpg"
@@ -84,11 +84,11 @@ export default function LeadershipPage() {
                 priority
               />
             </div>
-            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">
+            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
               {leadership.name}
             </h2>
           </article>
-          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">{leadership.role}</p>
             <p className="mt-4 text-base leading-8 text-theme-primary">
               Shirley Ama Daniels is a results-driven business executive and investment strategist with more than a decade of experience across gold trading, commodity exports, procurement, and strategic business management.
@@ -101,9 +101,9 @@ export default function LeadershipPage() {
           </article>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
               <Image
                 src="/images/headshots/dd-willet-founder.jpg"
@@ -113,11 +113,11 @@ export default function LeadershipPage() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <h2 className="mt-6 text-center text-3xl font-semibold text-theme-primary">
+            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
               Founder & Chief Executive Officer
             </h2>
           </article>
-          <article className="theme-panel shine-surface rounded-[2rem] p-6 sm:p-8">
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
               DD Willet Group Leadership
             </p>

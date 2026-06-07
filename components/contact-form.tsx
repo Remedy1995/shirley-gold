@@ -22,7 +22,7 @@ export function ContactForm() {
         </p>
       </div>
       <form action={site.formspreeEndpoint || undefined} method="POST" className="grid gap-5 lg:grid-cols-2">
-        <input type="hidden" name="_subject" value="New Shirley's Gold Trading Enterprise enquiry" />
+        <input type="hidden" name="_subject" value="New Shirley Trading enquiry" />
         <input type="hidden" name="_captcha" value="false" />
         <div>
           <label htmlFor="name" className="mb-2 block text-sm font-medium text-theme-primary">
