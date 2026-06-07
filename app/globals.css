@@ -308,6 +308,20 @@ html:not([data-theme="light"]) .theme-panel-soft .text-gold {
   backdrop-filter: blur(16px);
 }
 
+.theme-panel .form-input-theme,
+.theme-panel-strong .form-input-theme,
+.theme-panel-soft .form-input-theme {
+  background: rgb(255 255 255 / 0.96);
+  color: rgb(18 22 28);
+  caret-color: rgb(18 22 28);
+}
+
+.theme-panel .form-input-theme::placeholder,
+.theme-panel-strong .form-input-theme::placeholder,
+.theme-panel-soft .form-input-theme::placeholder {
+  color: rgb(111 117 129 / 0.96);
+}
+
 .form-input-theme::placeholder {
   color: rgb(var(--text-tertiary) / 0.9);
 }

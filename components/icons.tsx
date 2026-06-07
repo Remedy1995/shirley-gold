@@ -94,6 +94,15 @@ export function PhoneIcon(props: IconProps) {
   );
 }
 
+export function WhatsAppIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...props}>
+      <path d="M12 21a8.8 8.8 0 0 0 4.4-1.2L21 21l-1.3-4.3A8.8 8.8 0 1 0 12 21Z" />
+      <path d="M9.3 8.6c.2-.5.4-.6.7-.6h.6c.2 0 .4 0 .5.4l.5 1.3c.1.3.1.5-.1.8l-.4.5c-.2.2-.2.4-.1.6.3.6 1 1.7 2.2 2.3.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.7-.1l1.2.6c.3.1.5.3.4.6l-.1.8c0 .3-.2.5-.5.7-.5.3-1 .5-1.6.4-1.1-.1-2.3-.7-3.9-2.2-1.8-1.7-2.5-3.2-2.6-4.3 0-.5.1-1 .4-1.5Z" />
+    </svg>
+  );
+}
+
 export function MapPinIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" {...props}>

@@ -23,6 +23,8 @@ const enquiryTypes = [
   "Investment and partnership proposals"
 ];
 
+const whatsappLink = `https://wa.me/${site.phone.replace(/\D/g, "")}`;
+
 export default function ContactPage() {
   return (
     <>
@@ -57,15 +59,15 @@ export default function ContactPage() {
           <p className="mt-4 text-base leading-8 text-theme-secondary">
             For the fastest response, email
             {" "}
-            <Link href={`mailto:${site.email}`} className="text-gold transition hover:text-amber">
+            <a href={`mailto:${site.email}`} className="text-gold transition hover:text-amber">
               {site.email}
-            </Link>
+            </a>
             {" "}
-            or call
+            or message on WhatsApp
             {" "}
-            <Link href={`tel:${site.phone.replace(/\s+/g, "")}`} className="text-gold transition hover:text-amber">
+            <a href={whatsappLink} target="_blank" rel="noreferrer" className="text-gold transition hover:text-amber">
               {site.phone}
-            </Link>
+            </a>
             .
           </p>
         </div>

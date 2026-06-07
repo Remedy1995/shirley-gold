@@ -1,0 +1,15 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1600" height="900" fill="#0C1118"/>
+<rect width="1600" height="900" fill="url(#a)"/>
+<circle cx="1260" cy="708" r="290" fill="url(#b)" fill-opacity=".22"/>
+<rect x="170" y="194" width="1260" height="512" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+<path d="M270 594H1330" stroke="rgba(255,255,255,0.09)" stroke-width="3"/>
+<circle cx="438" cy="474" r="72" fill="rgba(213,174,89,0.2)" stroke="#D5AE59" stroke-width="3"/>
+<circle cx="804" cy="338" r="72" fill="rgba(213,174,89,0.2)" stroke="#D5AE59" stroke-width="3"/>
+<circle cx="1134" cy="478" r="72" fill="rgba(213,174,89,0.2)" stroke="#D5AE59" stroke-width="3"/>
+<path d="M510 474H732" stroke="#D5AE59" stroke-width="4"/>
+<path d="M876 338L1062 462" stroke="#D5AE59" stroke-width="4"/>
+<text x="324" y="271" fill="#F0D79A" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">LOGISTICS AND DELIVERY</text>
+<text x="324" y="324" fill="white" font-family="Georgia, serif" font-size="50">Secure movement from sourcing to refinery buyer</text>
+<defs><linearGradient id="a" x1="201" y1="117" x2="1372" y2="825" gradientUnits="userSpaceOnUse"><stop stop-color="#101721"/><stop offset=".58" stop-color="#141C27"/><stop offset="1" stop-color="#0E131A"/></linearGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 708) rotate(90) scale(290)"><stop stop-color="#D5AE59"/><stop offset="1" stop-color="#D5AE59" stop-opacity="0"/></radialGradient></defs>
+</svg>

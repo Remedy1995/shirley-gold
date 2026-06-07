@@ -22,8 +22,8 @@ type Slide = {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "https://cdn.pixabay.com/photo/2013/07/18/10/56/gold-163519_1280.jpg",
-    imageClassName: "saturate-[0.92] sepia-[0.16] contrast-[1.03]",
+    image: "/division-precious-4.webp",
+    imageClassName: "saturate-[0.94] sepia-[0.08] contrast-[1.04] brightness-[0.95]",
     tag: "Precious Metals",
     tagColor: "#F0D79A",
     tagBg: "rgba(214,176,91,0.14)",
@@ -36,8 +36,8 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    image: "https://cdn.pixabay.com/photo/2016/04/05/23/55/car-1310739_1280.jpg",
-    imageClassName: "saturate-[0.68] sepia-[0.18] contrast-[1.02] brightness-[0.92]",
+    image: "/division-automotive-3.webp",
+    imageClassName: "saturate-[0.84] sepia-[0.05] contrast-[1.03] brightness-[0.97]",
     tag: "Automotive",
     tagColor: "#E6D0A0",
     tagBg: "rgba(214,176,91,0.12)",
@@ -50,8 +50,8 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "https://cdn.pixabay.com/photo/2021/11/16/15/35/technology-6801334_1280.jpg",
-    imageClassName: "saturate-[0.72] sepia-[0.14] contrast-[1.02] brightness-[0.9]",
+    image: "/division-electronics-3.webp",
+    imageClassName: "saturate-[0.88] contrast-[1.03] brightness-[0.97]",
     tag: "Electronics",
     tagColor: "#E7D4A8",
     tagBg: "rgba(214,176,91,0.12)",

@@ -1,0 +1,23 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1600" height="900" fill="#0C1218"/>
+<rect width="1600" height="900" fill="url(#a)"/>
+<circle cx="1215" cy="197" r="232" fill="url(#b)" fill-opacity=".36"/>
+<rect x="184" y="176" width="358" height="514" rx="34" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+<path d="M363 251L268 333L363 488L458 333L363 251Z" fill="#D5AE59"/>
+<path d="M363 251L323 313H403L363 251Z" fill="#0C1218"/>
+<path d="M268 333H458" stroke="#0C1218" stroke-width="5"/>
+<path d="M323 313L268 333L363 488L458 333L403 313" stroke="#0C1218" stroke-width="5"/>
+<rect x="620" y="208" width="756" height="150" rx="34" fill="rgba(7,10,14,0.4)" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+<text x="675" y="272" fill="#F0D79A" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">LICENSED PROCUREMENT</text>
+<text x="675" y="324" fill="white" font-family="Georgia, serif" font-size="48">Gold sourcing aligned to verified export discipline</text>
+<path d="M620 510L796 438L980 526L906 692L708 710L620 510Z" fill="rgba(213,174,89,0.14)" stroke="#D5AE59" stroke-width="3"/>
+<path d="M620 510L708 710" stroke="#D5AE59" stroke-width="3"/>
+<path d="M796 438L906 692" stroke="#D5AE59" stroke-width="3"/>
+<path d="M980 526L708 710" stroke="#D5AE59" stroke-width="3"/>
+<circle cx="620" cy="510" r="10" fill="#F0D79A"/>
+<circle cx="796" cy="438" r="10" fill="#F0D79A"/>
+<circle cx="980" cy="526" r="10" fill="#F0D79A"/>
+<circle cx="708" cy="710" r="10" fill="#F0D79A"/>
+<circle cx="906" cy="692" r="10" fill="#F0D79A"/>
+<defs><linearGradient id="a" x1="221" y1="128" x2="1369" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#101721"/><stop offset=".57" stop-color="#141C27"/><stop offset="1" stop-color="#0E131A"/></linearGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1215 197) rotate(90) scale(232)"><stop stop-color="#D5AE59"/><stop offset="1" stop-color="#D5AE59" stop-opacity="0"/></radialGradient></defs>
+</svg>

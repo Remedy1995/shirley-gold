@@ -76,36 +76,6 @@ export default function LeadershipPage() {
           <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
               <Image
-                src="/images/headshots/shirley-ama-daniels.jpg"
-                alt="Portrait of Shirley Ama Daniels"
-                width={900}
-                height={1100}
-                className="h-full w-full object-cover"
-                priority
-              />
-            </div>
-            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
-              {leadership.name}
-            </h2>
-          </article>
-          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">{leadership.role}</p>
-            <p className="mt-4 text-base leading-8 text-theme-primary">
-              Shirley Ama Daniels is a results-driven business executive and investment strategist with more than a decade of experience across gold trading, commodity exports, procurement, and strategic business management.
-            </p>
-            {leadership.body.map((paragraph) => (
-              <p key={paragraph} className="mt-5 text-base leading-8 text-theme-secondary first:mt-6">
-                {paragraph}
-              </p>
-            ))}
-          </article>
-        </div>
-      </section>
-      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
-        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
-            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
-              <Image
                 src="/images/headshots/dd-willet-founder.jpg"
                 alt="Portrait of the founder and chief executive officer of DD Willet Group"
                 width={600}
@@ -128,6 +98,36 @@ export default function LeadershipPage() {
                   index === 0 ? "mt-4 text-theme-primary" : "mt-5 text-theme-secondary"
                 }`}
               >
+                {paragraph}
+              </p>
+            ))}
+          </article>
+        </div>
+      </section>
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
+            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
+              <Image
+                src="/images/headshots/shirley-ama-daniels.jpg"
+                alt="Portrait of Shirley Ama Daniels"
+                width={900}
+                height={1100}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
+            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
+              {leadership.name}
+            </h2>
+          </article>
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">{leadership.role}</p>
+            <p className="mt-4 text-base leading-8 text-theme-primary">
+              Shirley Ama Daniels is a results-driven business executive and investment strategist with more than a decade of experience across gold trading, commodity exports, procurement, and strategic business management.
+            </p>
+            {leadership.body.map((paragraph) => (
+              <p key={paragraph} className="mt-5 text-base leading-8 text-theme-secondary first:mt-6">
                 {paragraph}
               </p>
             ))}

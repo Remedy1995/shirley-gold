@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { DivisionSlideshow } from "@/components/division-slideshow";
 import {
   BuildingIcon,
   ChartIcon,
   DeviceIcon,
   GlobeIcon,
   IconBadge,
-  ShieldIcon,
   SparkIcon
 } from "@/components/icons";
 import { JsonLd } from "@/components/json-ld";
@@ -54,9 +54,9 @@ const automotiveServices = [
 ];
 
 const automotiveKeySignals = [
-  { label: "Annual Export", value: "200-400 KG", icon: ChartIcon },
-  { label: "Certification", value: "22-24 Karat Certified", icon: ShieldIcon },
-  { label: "Buyers", value: "UAE Refineries & International Buyers", icon: GlobeIcon }
+  { label: "Primary Market", value: "Ghana, West Africa" },
+  { label: "Vehicle Mix", value: "New & Quality-Used Vehicles" },
+  { label: "Focus", value: "Corporate Fleet Solutions" }
 ];
 
 const electronicsCategories = [
@@ -151,6 +151,7 @@ export default async function DivisionDetailPage({ params }: PageProps) {
         title={division.name}
         description={division.description}
       />
+      <DivisionSlideshow slides={division.gallery} label={`${division.name} Gallery`} />
       {division.slug === "automotive" ? (
         <section className="mx-auto w-[80%] max-w-[1800px] py-16 lg:py-22">
           <div className="space-y-8">
@@ -171,7 +172,7 @@ export default async function DivisionDetailPage({ params }: PageProps) {
             </div>
 
             <div className="grid gap-8 lg:grid-cols-2">
-              <article className="overflow-hidden rounded-[2rem] border border-[rgb(var(--line)/0.16)] bg-white shadow-[0_22px_70px_rgb(var(--panel-shadow)/0.2)]">
+              <article className="theme-panel overflow-hidden rounded-[2rem]">
                 <div className="px-6 py-7 sm:px-8 sm:py-9">
                   <p className="text-base font-semibold uppercase tracking-[0.22em] text-[#18376f] sm:text-lg">
                     Toyota Lineup
@@ -187,7 +188,7 @@ export default async function DivisionDetailPage({ params }: PageProps) {
                 </div>
               </article>
 
-              <article className="overflow-hidden rounded-[2rem] border border-[rgb(var(--line)/0.16)] bg-white shadow-[0_22px_70px_rgb(var(--panel-shadow)/0.2)]">
+              <article className="theme-panel overflow-hidden rounded-[2rem]">
                 <div className="px-6 py-7 sm:px-8 sm:py-9">
                   <p className="text-base font-semibold uppercase tracking-[0.22em] text-[#18376f] sm:text-lg">
                     Chinese Brands
@@ -219,14 +220,9 @@ export default async function DivisionDetailPage({ params }: PageProps) {
                     key={metric.label}
                     className="theme-panel shine-surface rounded-[2rem] px-6 py-7 sm:px-7 sm:py-8"
                   >
-                    <div className="flex items-center justify-between gap-4">
-                      <p className="text-xs uppercase tracking-[0.24em] text-theme-tertiary">
-                        {metric.label}
-                      </p>
-                      <IconBadge className="h-11 w-11 rounded-[0.95rem]">
-                        <metric.icon />
-                      </IconBadge>
-                    </div>
+                    <p className="text-xs uppercase tracking-[0.24em] text-theme-tertiary">
+                      {metric.label}
+                    </p>
                     <p className="mt-5 text-2xl font-semibold leading-9 text-theme-primary sm:text-[2rem]">
                       {metric.value}
                     </p>

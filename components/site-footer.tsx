@@ -1,7 +1,9 @@
 import Link from "next/link";
 
-import { MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
+import { MailIcon, MapPinIcon, WhatsAppIcon } from "@/components/icons";
 import { navigation, site } from "@/content/site";
+
+const whatsappLink = `https://wa.me/${site.phone.replace(/\D/g, "")}`;
 
 export function SiteFooter() {
   return (
@@ -36,7 +38,11 @@ export function SiteFooter() {
                 <span className="mt-0.5 text-gold">
                   <MapPinIcon className="h-4 w-4" />
                 </span>
-                <span>{site.address}</span>
+                <span>
+                  DSO-IFZA, IFZA Properties
+                  <br />
+                  Silicon Oasis, Dubai, UAE
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-0.5 text-gold">
@@ -48,9 +54,9 @@ export function SiteFooter() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-0.5 text-gold">
-                  <PhoneIcon className="h-4 w-4" />
+                  <WhatsAppIcon className="h-4 w-4" />
                 </span>
-                <a href={`tel:${site.phone.replace(/\s+/g, "")}`} className="transition hover:text-theme-primary">
+                <a href={whatsappLink} className="transition hover:text-theme-primary">
                   {site.phone}
                 </a>
               </div>

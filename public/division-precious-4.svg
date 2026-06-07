@@ -1,0 +1,20 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1600" height="900" fill="#0B1117"/>
+<rect width="1600" height="900" fill="url(#a)"/>
+<path d="M232 191H1368" stroke="#D5AE59" stroke-opacity=".16" stroke-width="2"/>
+<path d="M232 715H1368" stroke="#D5AE59" stroke-opacity=".16" stroke-width="2"/>
+<circle cx="438" cy="450" r="16" fill="#F0D79A"/>
+<circle cx="786" cy="318" r="16" fill="#F0D79A"/>
+<circle cx="1144" cy="436" r="16" fill="#F0D79A"/>
+<path d="M438 450L786 318L1144 436" stroke="#D5AE59" stroke-width="5"/>
+<rect x="246" y="230" width="366" height="120" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+<text x="294" y="282" fill="#F0D79A" font-family="Arial, sans-serif" font-size="20" letter-spacing="4">GHANA ORIGIN</text>
+<text x="294" y="326" fill="white" font-family="Georgia, serif" font-size="34">Certified sourcing</text>
+<rect x="620" y="140" width="366" height="120" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+<text x="668" y="192" fill="#F0D79A" font-family="Arial, sans-serif" font-size="20" letter-spacing="4">DUBAI HUB</text>
+<text x="668" y="236" fill="white" font-family="Georgia, serif" font-size="34">Trade coordination</text>
+<rect x="986" y="224" width="366" height="120" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+<text x="1034" y="276" fill="#F0D79A" font-family="Arial, sans-serif" font-size="20" letter-spacing="4">REFINERY MARKET</text>
+<text x="1034" y="320" fill="white" font-family="Georgia, serif" font-size="34">Institutional buyers</text>
+<defs><linearGradient id="a" x1="198" y1="121" x2="1362" y2="818" gradientUnits="userSpaceOnUse"><stop stop-color="#121923"/><stop offset=".57" stop-color="#0F151D"/><stop offset="1" stop-color="#0B1016"/></linearGradient></defs>
+</svg>

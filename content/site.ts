@@ -6,6 +6,12 @@ export type Division = {
   eyebrow: string;
   summary: string;
   description: string;
+  gallery: {
+    src: string;
+    alt: string;
+    eyebrow: string;
+    title: string;
+  }[];
   bullets: string[];
   metrics: { label: string; value: string }[];
   detailSections: { title: string; body: string }[];
@@ -27,7 +33,7 @@ export const site = {
   description:
     "Shirley's Gold Trading Enterprise - FZCO is a Dubai-based trading company connecting African resources with global markets through precious metals trading, automotive imports, and consumer electronics distribution.",
   domain: "https://www.shirleytrading.com",
-  ogImage: "/og-image.png",
+  ogImage: "/og-image.webp",
   keywords: [
     "Shirley Trading",
     "Shirley's Gold Trading Enterprise",
@@ -201,6 +207,32 @@ export const divisions: Division[] = [
     summary: "Ethically sourced Ghanaian gold connected to UAE and international refinery buyers.",
     description:
       "The precious metals division connects GoldBod-certified Ghanaian miners with UAE refineries and institutional buyers through compliant sourcing, assay-certified quality control, and secure logistics.",
+    gallery: [
+      {
+        src: "/division-precious-1.webp",
+        alt: "Gold bars positioned for institutional trade and refinery markets",
+        eyebrow: "Sourcing",
+        title: "Licensed procurement and verified supply flow"
+      },
+      {
+        src: "/division-precious-2.webp",
+        alt: "Gold procurement at origin with field-level sourcing activity",
+        eyebrow: "Assay",
+        title: "Purity testing and refinery-grade quality assurance"
+      },
+      {
+        src: "/division-precious-3.webp",
+        alt: "Mobile trading and market access for precious metals buyers",
+        eyebrow: "Execution",
+        title: "Secure logistics and institutional buyer delivery"
+      },
+      {
+        src: "/division-precious-4.webp",
+        alt: "Protected storage and secure handling of certified gold bars",
+        eyebrow: "Markets",
+        title: "Structured access to UAE and global refinery markets"
+      }
+    ],
     bullets: [
       "Gold procurement from certified Ghanaian miners",
       "Independent quality testing and assay certification",
@@ -238,6 +270,32 @@ export const divisions: Division[] = [
     summary: "Premium new and quality-used vehicles sourced from Dubai for West African buyers.",
     description:
       "The automotive division imports and distributes new and quality-used vehicles from Dubai to West African markets, with Ghana as the primary destination market.",
+    gallery: [
+      {
+        src: "/division-automotive-1.webp",
+        alt: "New vehicle positioned for regional automotive demand",
+        eyebrow: "Inventory",
+        title: "Market-fit vehicle sourcing for regional demand"
+      },
+      {
+        src: "/division-automotive-2.webp",
+        alt: "Specialized automotive transport and branded mobility showcase",
+        eyebrow: "Logistics",
+        title: "Shipping, customs, and delivery coordination"
+      },
+      {
+        src: "/division-automotive-3.webp",
+        alt: "Pickup vehicle prepared for commercial and fleet programs",
+        eyebrow: "Fleet",
+        title: "Fleet-ready supply for business and institutional buyers"
+      },
+      {
+        src: "/division-automotive-4.webp",
+        alt: "Automotive inventory arriving through a port logistics environment",
+        eyebrow: "Support",
+        title: "Inspection, roadworthiness, and after-sales support"
+      }
+    ],
     bullets: [
       "Toyota sedans, SUVs, pickups, vans, and commercial vehicles",
       "Chinese brands including Geely, BYD, Changan, JAC, Great Wall, and MG",
@@ -274,6 +332,32 @@ export const divisions: Division[] = [
     summary: "Consumer electronics and appliances sourced from Asia and distributed through Dubai into Africa.",
     description:
       "The electronics division sources consumer electronics and home appliances from Chinese manufacturers and channels them through Dubai to African retail and wholesale buyers.",
+    gallery: [
+      {
+        src: "/division-electronics-1.webp",
+        alt: "Appliance showroom with premium home electronics",
+        eyebrow: "Sourcing",
+        title: "OEM electronics sourcing coordinated through Asia"
+      },
+      {
+        src: "/division-electronics-2.webp",
+        alt: "Smart home electronics and connected device display",
+        eyebrow: "Distribution",
+        title: "Appliances and devices routed through Dubai"
+      },
+      {
+        src: "/division-electronics-3.webp",
+        alt: "Business electronics showroom with computing and media devices",
+        eyebrow: "Channels",
+        title: "Wholesale and retail supply across African markets"
+      },
+      {
+        src: "/division-electronics-4.webp",
+        alt: "Consumer gaming and home entertainment electronics in use",
+        eyebrow: "Commercial",
+        title: "Commercial-grade supply for business procurement"
+      }
+    ],
     bullets: [
       "Home appliances including refrigerators, washing machines, and air conditioners",
       "Consumer electronics such as televisions, audio systems, and smart home devices",

@@ -66,7 +66,7 @@ export default function CompliancePage() {
         title="Ethical Foundation and Regulatory Adherence"
         description="Governance is presented as a commercial requirement, supporting institutional confidence across sourcing, export, logistics, and buyer engagement."
       />
-      <Section title="Framework overview" description="The compliance architecture aligns licensing, transaction controls, and ethical trading standards across the company.">
+      <Section title="Framework overview" description="Licensing discipline, counterparty checks, documentation controls, and ethical trading standards support the company's cross-border operating model.">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {governanceBlocks.map((block) => {
             const Icon = block.icon;

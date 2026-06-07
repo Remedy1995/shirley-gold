@@ -1,7 +1,7 @@
-import Link from "next/link";
-
-import { BuildingIcon, IconBadge, MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
+import { BuildingIcon, IconBadge, MailIcon, MapPinIcon, WhatsAppIcon } from "@/components/icons";
 import { site } from "@/content/site";
+
+const whatsappLink = `https://wa.me/${site.phone.replace(/\D/g, "")}`;
 
 export function ContactModule() {
   return (
@@ -26,20 +26,20 @@ export function ContactModule() {
             </IconBadge>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-theme-primary">Email</p>
           </div>
-          <Link href={`mailto:${site.email}`} className="mt-3 block text-center text-base font-medium text-theme-secondary transition hover:text-gold">
+          <a href={`mailto:${site.email}`} className="mt-3 block text-center text-base font-medium text-theme-secondary transition hover:text-gold">
             {site.email}
-          </Link>
+          </a>
         </div>
         <div className="theme-panel-soft rounded-3xl p-5">
           <div className="flex items-center justify-center gap-3">
             <IconBadge className="h-11 w-11 rounded-2xl">
-              <PhoneIcon />
+              <WhatsAppIcon />
             </IconBadge>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-theme-primary">Phone</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-theme-primary">WhatsApp</p>
           </div>
-          <Link href={`tel:${site.phone.replace(/\s+/g, "")}`} className="mt-3 block text-center text-base font-medium text-theme-secondary transition hover:text-gold">
+          <a href={whatsappLink} target="_blank" rel="noreferrer" className="mt-3 block text-center text-base font-medium text-theme-secondary transition hover:text-gold">
             {site.phone}
-          </Link>
+          </a>
         </div>
         <div className="theme-panel-soft rounded-3xl p-5">
           <div className="flex items-center justify-center gap-3">
