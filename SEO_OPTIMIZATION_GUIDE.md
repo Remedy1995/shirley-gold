@@ -15,13 +15,17 @@ Google Search Console (GSC) is a free tool provided by Google that allows you to
    - You will be prompted to "Add a Property". Select the **Domain** verification method.
    - Enter your domain: `shirleysgoldtrading.com`.
 3. **Verify Ownership**: 
-   - Google will provide a **TXT record** (a string of text).
-   - Log into your domain registrar (e.g., GoDaddy, Namecheap, Cloudflare) and navigate to your DNS settings.
-   - Add a new `TXT` record, paste the string Google provided, and save.
-   - Return to Google Search Console and click **Verify**. (Note: DNS propagation can sometimes take up to 24 hours, though it is usually fast).
+   - Google will provide a **TXT record** (a string of text that looks like `google-site-verification=...`).
+   - Log into your domain registrar (e.g., Namecheap) and navigate to your Advanced DNS settings.
+   - Add a new record with the following details:
+     - **Type:** `TXT Record`
+     - **Host:** `@` (This symbol represents your root domain)
+     - **Value:** Paste the string Google provided here.
+     - **TTL:** `Automatic`
+   - Save the record, then return to Google Search Console and click **Verify**. (Note: DNS propagation can sometimes take a few minutes to a few hours).
 4. **Submit Your Sitemap**:
-   - Once logged in to GSC, look at the left sidebar and click **Sitemaps**.
-   - Type in the URL of your sitemap. For a Next.js app like yours, this is typically `https://www.shirleysgoldtrading.com/sitemap.xml`.
+   - Once logged in to GSC and your domain is verified, look at the left sidebar and click **Sitemaps**.
+   - Your domain URL will likely be pre-filled. In the blank input space next to it, simply type `sitemap.xml` (or paste `https://www.shirleysgoldtrading.com/sitemap.xml` if the field is entirely blank).
    - Click **Submit**. Google's crawlers will now index all your pages systematically.
 5. **Monitor Core Web Vitals**: In the left sidebar, check "Core Web Vitals". The Next.js image optimizations recently applied will ensure you score highly here, which boosts your ranking.
 
