@@ -47,49 +47,21 @@ export default function LeadershipPage() {
           <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
               <Image
-                src="/images/headshots/pritham-r.jpeg"
-                alt="Portrait of Pritham R"
+                src="/images/headshots/dd-willet-founder.jpg"
+                alt="Portrait of Bishop Dickson Akwasi Daniels"
                 width={900}
                 height={1100}
-                className="h-full w-full object-cover object-top"
-              />
-            </div>
-            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">PRITHAM R</h2>
-          </article>
-          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">Chief Executive Officer</p>
-            {prithamProfile.map((paragraph, index) => (
-              <p
-                key={paragraph}
-                className={`text-base leading-8 ${
-                  index === 0 ? "mt-4 text-theme-primary" : "mt-5 text-theme-secondary"
-                }`}
-              >
-                {paragraph}
-              </p>
-            ))}
-          </article>
-        </div>
-      </section>
-      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
-        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
-            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
-              <Image
-                src="/images/headshots/dd-willet-founder.jpg"
-                alt="Portrait of the founder and chief executive officer of DD Willet Group"
-                width={600}
-                height={600}
                 className="h-full w-full object-cover"
+                priority
               />
             </div>
             <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
-              Founder & Chief Executive Officer
+              Bishop Dickson Akwasi Daniels
             </h2>
           </article>
           <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">
-              DD Willet Group Leadership
+              Founder and Director
             </p>
             {founderProfile.map((paragraph, index) => (
               <p
@@ -114,7 +86,6 @@ export default function LeadershipPage() {
                 width={900}
                 height={1100}
                 className="h-full w-full object-cover"
-                priority
               />
             </div>
             <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">
@@ -128,6 +99,35 @@ export default function LeadershipPage() {
             </p>
             {leadership.body.map((paragraph) => (
               <p key={paragraph} className="mt-5 text-base leading-8 text-theme-secondary first:mt-6">
+                {paragraph}
+              </p>
+            ))}
+          </article>
+        </div>
+      </section>
+      <section className="mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+          <article className="theme-panel-strong shine-surface rounded-[1.5rem] p-5 sm:p-6">
+            <div className="mx-auto aspect-[4/5] max-w-[18rem] overflow-hidden rounded-[1.5rem] border border-[rgb(var(--line)/0.14)] bg-white sm:max-w-[20rem]">
+              <Image
+                src="/images/headshots/pritham-r.jpeg"
+                alt="Portrait of Pritham R"
+                width={900}
+                height={1100}
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
+            <h2 className="mt-6 text-center text-2xl font-semibold text-theme-primary">Pritham R</h2>
+          </article>
+          <article className="theme-panel shine-surface rounded-[1.5rem] p-5 sm:p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">Chief Executive Officer</p>
+            {prithamProfile.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`text-base leading-8 ${
+                  index === 0 ? "mt-4 text-theme-primary" : "mt-5 text-theme-secondary"
+                }`}
+              >
                 {paragraph}
               </p>
             ))}

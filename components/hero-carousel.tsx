@@ -123,11 +123,11 @@ export function HeroCarousel() {
         </div>
 
         <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-8 sm:px-8 sm:pb-10">
-          <div className="max-w-4xl">
+          <div className="slideshow-caption-container">
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em]" style={{ color: slide.tagColor }}>
               {slide.eyebrow}
             </p>
-            <h2 className="mt-3 text-[2rem] font-semibold leading-tight text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.26)] sm:text-[2.5rem]">
+            <h2 className="slideshow-title mt-3 text-lg font-semibold leading-tight text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.26)] sm:text-[2.5rem]">
               {slide.title}
             </h2>
             <div className="mt-6 flex flex-wrap items-center gap-4">

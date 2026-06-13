@@ -45,22 +45,22 @@ export function DivisionSlideshow({
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,11,15,0.12),rgba(8,11,15,0.08)_24%,rgba(8,11,15,0.26)_58%,rgba(8,11,15,0.76)_100%)]" />
 
           <div className="absolute inset-x-0 top-0 flex items-center px-5 py-5 sm:px-7 sm:py-6">
-            <span className="rounded-full border border-[#e1bf69]/30 bg-[#e1bf69]/16 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f0d79a] backdrop-blur-sm">
+            <div className="slideshow-label rounded-[1rem] border border-[#e1bf69]/30 bg-[#e1bf69]/16 px-3 py-1.5 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wider sm:tracking-[0.22em] text-[#f0d79a] backdrop-blur-sm text-left sm:rounded-full sm:px-4">
               {label}
-            </span>
+            </div>
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 px-5 pb-6 sm:px-7 sm:pb-8">
-            <div className="max-w-2xl">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#f0d79a]">
+          <div className="absolute inset-x-0 bottom-0 px-5 pb-5 sm:px-7 sm:pb-8">
+            <div className="slideshow-caption-container">
+              <p className="text-[9px] font-semibold uppercase leading-relaxed tracking-[0.14em] text-[#f0d79a] sm:text-[10px] sm:tracking-[0.24em]">
                 {activeSlide.eyebrow}
               </p>
-              <h2 className="mt-3 text-2xl font-semibold leading-tight text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.26)] sm:text-[2rem]">
+              <h2 className="slideshow-title mt-1.5 text-sm font-semibold leading-snug text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.26)] sm:mt-3 sm:text-2xl sm:leading-tight sm:text-[2rem]">
                 {activeSlide.title}
               </h2>
             </div>
 
-            <div className="mt-6 flex justify-end">
+            <div className="mt-4 flex justify-end sm:mt-6">
               <div className="flex gap-2">
                 {slides.map((slide, index) => (
                   <button

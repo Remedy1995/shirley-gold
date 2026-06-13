@@ -48,6 +48,14 @@ const valueIcons = {
   Sustainability: GlobeIcon
 } as const;
 
+const csrIcons = {
+  "Community Support": GlobeIcon,
+  "Environmental Care": CarIcon,
+  "Ethical Trade": ShieldIcon,
+  "Economic Empowerment": DeviceIcon,
+  "Regulatory Compliance": BuildingIcon
+} as const;
+
 const footprintItems = [
   {
     title: "United Arab Emirates",
@@ -227,6 +235,36 @@ export default function AboutPage() {
             );
           })}
         </div>
+      </Section>
+      <Section
+        title="Corporate Social Responsibility"
+        description="We trade with purpose. Our business creates value not just for our partners and clients, but for the communities, environments, and economies we operate in."
+      >
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {site.csr.map((item) => {
+            const Icon = csrIcons[item.title as keyof typeof csrIcons] ?? ShieldIcon;
+
+            return (
+              <article key={item.title} className="theme-panel shine-surface rounded-[1.25rem] p-5">
+                <div className="flex items-center gap-4">
+                  <IconBadge className="h-11 w-11 rounded-[0.95rem]">
+                    <Icon />
+                  </IconBadge>
+                  <h3 className="text-xl font-semibold text-theme-primary">{item.title}</h3>
+                </div>
+                <p className="mt-4 text-sm leading-7 text-theme-secondary">{item.body}</p>
+              </article>
+            );
+          })}
+        </div>
+        <article className="theme-panel shine-surface mt-8 rounded-[1.5rem] px-6 py-7 sm:px-7 sm:py-8 text-center">
+          <p className="text-xl font-semibold italic leading-9 text-theme-primary">
+            {"“Good business leaves the world better than it found it.”"}
+          </p>
+          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+            {"— Shirley's Gold Trading Enterprise – FZCO"}
+          </p>
+        </article>
       </Section>
       <section className="mx-auto w-[80%] max-w-[1800px] pb-20 lg:pb-28">
         <div className="overflow-hidden rounded-[2rem] border border-[rgb(var(--line)/0.16)] theme-panel shine-surface">

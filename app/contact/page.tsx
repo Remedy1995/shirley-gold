@@ -23,8 +23,6 @@ const enquiryTypes = [
   "Investment and partnership proposals"
 ];
 
-const whatsappLink = `https://wa.me/${site.phone.replace(/\D/g, "")}`;
-
 export default function ContactPage() {
   return (
     <>
@@ -63,10 +61,14 @@ export default function ContactPage() {
               {site.email}
             </a>
             {" "}
-            or message on WhatsApp
+            or message on WhatsApp at
             {" "}
-            <a href={whatsappLink} target="_blank" rel="noreferrer" className="text-gold transition hover:text-amber">
-              {site.phone}
+            <a href={`https://wa.me/${site.phone.replace(/\D/g, "")}`} target="_blank" rel="noreferrer" className="text-gold transition hover:text-amber">
+              {site.phone} (UAE)
+            </a>
+            {" or "}
+            <a href={`https://wa.me/${site.ghanaPhone.replace(/\D/g, "")}`} target="_blank" rel="noreferrer" className="text-gold transition hover:text-amber">
+              {site.ghanaPhone} (Ghana)
             </a>
             .
           </p>

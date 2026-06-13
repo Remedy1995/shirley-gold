@@ -47,9 +47,13 @@ export const site = {
   ],
   formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "https://formspree.io/f/xgobazay",
   phone: "+971 55 339 8741",
+  ghanaPhone: "+233 27 245 0197",
   email: "info@shirleytrading.com",
   license: "License No. 50854",
   address: "DSO-IFZA, IFZA Properties, Dubai Silicon Oasis, Dubai, UAE",
+  ghanaAddress: "Ashaiman - Tulaku Roundabout, Adjacent to the Bank of Africa (At the 1st Floor of the Centre for Media & Business Building)",
+  facebook: "https://web.facebook.com/shirleygoldtrading/",
+  instagram: "https://www.instagram.com/shirleygoldtrading/",
   registration: "Dubai Economy and Tourism Department",
   freeZone: "Dubai Silicon Oasis (DSO-IFZA)",
   jurisdiction: "Dubai Silicon Oasis Authority (DSOA)",
@@ -83,6 +87,28 @@ export const site = {
     {
       title: "Sustainability",
       body: "Long-term ethical trade partnerships that create enduring value."
+    }
+  ],
+  csr: [
+    {
+      title: "Community Support",
+      body: "We source directly from small-scale miners in Ghana, paying fair prices and building long-term relationships that provide stable incomes for mining families and local communities."
+    },
+    {
+      title: "Environmental Care",
+      body: "We refuse engagement with environmentally destructive mining operations, work with eco-compliant logistics partners, and actively promote electric and hybrid vehicles as part of a cleaner future for African mobility."
+    },
+    {
+      title: "Ethical Trade",
+      body: "Every transaction we conduct is fully documented, AML/KYC compliant, and conflict-free. We maintain zero tolerance for fraud, bribery, and undisclosed practices — at every level of our supply chain."
+    },
+    {
+      title: "Economic Empowerment",
+      body: "By making quality vehicles and modern electronics accessible and affordable across West Africa, we support individual livelihoods, business productivity, and broader participation in the digital economy."
+    },
+    {
+      title: "Regulatory Compliance",
+      body: "We operate under the full regulatory framework of the Dubai Silicon Oasis Authority and Dubai Economy and Tourism Department — giving our partners confidence that every trade is legitimate, transparent, and accountable."
     }
   ],
   compliancePoints: [

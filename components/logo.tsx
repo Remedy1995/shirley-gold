@@ -3,18 +3,16 @@ import Image from "next/image";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex min-w-0 items-center gap-3 text-white">
-      <span className="relative flex h-10 w-10 shrink-0 overflow-hidden sm:h-11 sm:w-11">
+    <Link href="/" className="flex min-w-0 items-center text-white">
+      <span className="relative flex h-[50px] w-[140px] shrink-0 overflow-hidden sm:h-[58px] sm:w-[165px] lg:h-[66px] lg:w-[190px]">
         <Image
-          src="/shirleys-gold-mark.webp"
-          alt="Shirley's Gold Trading logo"
+          src="/shirleys-gold-logo.png"
+          alt="Shirley's Gold Trading Enterprise"
           fill
-          sizes="44px"
-          className="object-contain"
+          sizes="(max-width: 640px) 140px, (max-width: 1024px) 165px, 190px"
+          className="object-contain object-left"
+          priority
         />
-      </span>
-      <span className="truncate text-sm font-semibold uppercase tracking-[0.12em] text-white xl:text-base">
-        Shirley Trading
       </span>
     </Link>
   );

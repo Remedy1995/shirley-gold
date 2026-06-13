@@ -14,7 +14,7 @@ const config: Config = {
         slate: "#262E39",
         fog: "#E8E1D3",
         ivory: "#F7F3EB",
-        gold: "#C7A54B",
+        gold: "#CCAB17",
         amber: "#E2C16F"
       },
       boxShadow: {

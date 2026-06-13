@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-[rgb(var(--line)/0.1)] bg-hero-radial">
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_18%,transparent_78%,rgba(255,255,255,0.015))]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_14%,rgba(199,165,75,0.1),transparent_24%)]" />
-      <div className="relative mx-auto w-[80%] max-w-[1800px] py-20 lg:py-28">
+      <div className="relative mx-auto w-[90%] sm:w-[85%] md:w-[80%] max-w-[1800px] py-16 sm:py-20 lg:py-28">
         <div className="w-full">
           <HeroCarousel />
         </div>

@@ -18,7 +18,7 @@ export function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#05070a] shadow-[0_18px_55px_rgba(0,0,0,0.38)] backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-[#CAA616]/20 bg-[#08090e]/95 shadow-[0_8px_32px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
       <div className="mx-auto flex w-[90%] max-w-[1800px] items-center justify-between gap-2 py-2.5">
         <Logo />
         <nav aria-label="Primary" className="hidden items-center gap-0.5 md:flex xl:gap-4">
@@ -66,7 +66,7 @@ export function SiteHeader() {
         <nav
           id="mobile-primary-nav"
           aria-label="Mobile primary"
-          className="border-t border-white/10 bg-[#05070a] px-5 py-3 md:hidden"
+          className="border-t border-[#CAA616]/20 bg-[#08090e]/98 px-5 py-3 md:hidden"
         >
           <div className="flex flex-col gap-1">
             {navigation.map((item) => (
